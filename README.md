@@ -1,1 +1,1 @@
-# icoegi.github.io
+# Website for our trips
