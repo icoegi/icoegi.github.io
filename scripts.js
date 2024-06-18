@@ -68,4 +68,16 @@ function loadMap() {
 	.catch(error => console.error('Error fetching CSV file:', error));	
 }
 
+function fetchGitHubPhotos() {
+	const xhr = new XMLHttpRequest();
+	const url = "https://api.github.com/repos/icoegi/2023-Torino/contents/"
+	xhr.open('GET', url, true);
+	xhr.onload = function() {
+		const data = JSON.parse(this.response);
+		console.log(data);
+	};
+    	xhr.send();
+}
+
 loadMap();
+fetchGitHubPhotos();
