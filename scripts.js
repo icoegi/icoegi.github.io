@@ -42,8 +42,10 @@ function loadMap() {
 			});
 
 			// Center map on the available coordinates
-			x_center = (Math.max(...x_coords) - Math.min(...x_coords)) / 2 + Math.min(...x_coords);
-			y_center = (Math.max(...y_coords) - Math.min(...y_coords)) / 2 + Math.min(...y_coords);
+			// x_center = (Math.max(...x_coords) - Math.min(...x_coords)) / 2 + Math.min(...x_coords);
+			// y_center = (Math.max(...y_coords) - Math.min(...y_coords)) / 2 + Math.min(...y_coords);
+			x_center = 44.243581582354025;
+			y_center = 7.843588216836361;
 			map.setView([x_center, y_center], 6);
 
 			// Define custom icon
